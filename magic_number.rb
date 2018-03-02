@@ -2,6 +2,7 @@ require 'numbers_in_words'
 
 def magic_number(n)
   n_string = NumbersInWords.in_words(n)
+  
   if n_string.delete(' ').length != 4
     puts "#{n} is #{n_string.delete(' ').length}"
     magic_number(n_string.delete(' ').length)
